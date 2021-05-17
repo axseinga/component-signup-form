@@ -47,7 +47,6 @@
                   type="text"
                   id="fname"
                   placeholder="First Name"
-                  required
                   class="claim__form--input"
                 />
                 <img
@@ -66,14 +65,14 @@
                   id="fsurname"
                   placeholder="Last Name"
                   class="claim__form--input"
-                  required
                 />
                 <img
                   src="./images/icon-error.svg"
                   alt="Error"
                   class="claim__form--icon hidden"
+                  id="iconErrorSurname"
                 />
-                <p class="claim__form--alert hidden">
+                <p class="claim__form--alert hidden" id="textErrorSurname">
                   Last name cannot be empty
                 </p>
               </div>
@@ -83,31 +82,31 @@
                   id="femail"
                   placeholder="Email Address"
                   class="claim__form--input"
-                  required
                 />
                 <img
                   src="./images/icon-error.svg"
                   alt="Error"
                   class="claim__form--icon hidden"
+                  id="iconErrorEmail"
                 />
-                <p class="claim__form--alert hidden">
+                <p class="claim__form--alert hidden" id="textErrorEmail">
                   Looks like this is not an email
                 </p>
               </div>
               <div class="claim__form__container">
                 <input
-                  type="text"
+                  type="password"
                   id="fpassword"
                   placeholder="Password"
                   class="claim__form--input"
-                  required
                 />
                 <img
                   src="./images/icon-error.svg"
                   alt="Error"
                   class="claim__form--icon hidden"
+                  id="iconErrorPassword"
                 />
-                <p class="claim__form--alert hidden">
+                <p class="claim__form--alert hidden" id="textErrorPassword">
                   Password name cannot be empty
                 </p>
               </div>
@@ -138,5 +137,7 @@
         </footer>
       </section>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
