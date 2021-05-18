@@ -15,6 +15,12 @@ $color-white: #fff;
 
 $font-primary: "Poppins", sans-serif;
 
+// Breakpoints
+$bp-smallest: 28rem;
+$bp-medium: 37.5rem;
+$bp-large: 62.5rem;
+// 90 rem
+
 /////////// Styles //////////////
 
 *,
@@ -34,37 +40,79 @@ html {
 body {
   background-image: url(../images/bg-intro-mobile.png);
   background-color: $color-primary;
+
+  @media only screen and (min-width: $bp-large) {
+    height: 100vh;
+  }
 }
 
 .wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  //align-items: center;
+  align-items: center;
   min-height: 100vh;
   padding: 3rem;
 
   text-align: center;
+
+  @media only screen and (min-width: $bp-large) {
+    flex-direction: row;
+    min-height: 90vh;
+  }
 }
 
 .heading {
+  max-width: max-content;
+
+  @media only screen and (min-width: $bp-medium) {
+    width: 550px;
+  }
+
+  @media only screen and (min-width: $bp-large) {
+    max-width: 550px;
+    margin-right: 5rem;
+    text-align: left;
+  }
+
   &--primary {
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.2;
     padding-top: 3rem;
     padding-bottom: 1.5rem;
+
+    @media only screen and (min-width: $bp-smallest) {
+      font-size: 3.5rem;
+    }
+
+    @media only screen and (min-width: $bp-large) {
+      font-size: 5rem;
+      margin-bottom: 2rem;
+    }
   }
 
   &--secondary {
     font-weight: 400;
     padding-bottom: 6rem;
     font-size: 1.6rem;
+
+    @media only screen and (min-width: $bp-smallest) {
+      font-size: 2rem;
+    }
   }
 }
 
 .claim__wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  max-width: 450px;
+
+  @media only screen and (min-width: $bp-large) {
+    min-width: 550px;
+    height: min-content;
+  }
 }
 
 .claim__heading {
@@ -80,6 +128,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (min-width: $bp-large) {
+    font-size: 1.7rem;
+  }
 
   &--bold {
     font-weight: 800;
@@ -100,6 +152,11 @@ body {
   margin-top: 2rem;
 
   box-shadow: 0px 6px 3px 2px rgba(0, 0, 0, 0.23);
+
+  @media only screen and (min-width: $bp-large) {
+    height: 550px;
+    justify-content: space-evenly;
+  }
 
   &__container {
     height: min-content;
@@ -122,6 +179,10 @@ body {
     border: 1px solid $color-border;
     font-weight: 800;
     font-size: 1.4rem;
+
+    @media only screen and (min-width: $bp-large) {
+      height: 60px;
+    }
   }
 
   &--icon {
@@ -131,6 +192,10 @@ body {
     position: absolute;
     top: 25px;
     right: 50px;
+
+    @media only screen and (min-width: $bp-large) {
+      top: 30px;
+    }
   }
 
   &--alert {
@@ -138,6 +203,10 @@ body {
     align-self: flex-end;
     padding: 0 3rem;
     font-style: italic;
+
+    @media only screen and (min-width: $bp-large) {
+      font-size: 1.1rem;
+    }
   }
 
   &--btn {
@@ -152,6 +221,10 @@ body {
     margin: 2rem 2rem 1rem 2rem;
     border: 2px solid $color-btn-border;
     cursor: pointer;
+
+    @media only screen and (min-width: $bp-large) {
+      height: 60px;
+    }
   }
 
   &--btn:hover {
@@ -162,6 +235,10 @@ body {
     color: $color-neutral-light;
     font-weight: 600;
     padding: 0 1rem;
+
+    @media only screen and (min-width: $bp-large) {
+      font-size: 1.2rem;
+    }
 
     &--bold {
       color: $color-primary;
@@ -178,6 +255,10 @@ body {
   text-align: center;
 
   margin: 3rem;
+
+  @media only screen and (min-width: $bp-large) {
+    margin: 1rem;
+  }
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
