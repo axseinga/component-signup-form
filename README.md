@@ -49,10 +49,10 @@ Users should be able to:
 
 ### What I learned
 
-In this project I decided to completely focus on Flexbox structure what help me to center the whole component and code it responsively. As for functionality I decided to code in plain Javascript as this is the area I am currently learning. I had a chance to refactor my code into functions and find out more about forms and automatic refreshing after user clicks sumbit button and how to prevent it.
+In this project I decided to completely focus on Flexbox structure what help me to center the whole component and code it responsively. As for functionality I decided to code in plain Javascript as this is the area I am currently learning. I had a chance to refactor my code into functions and find out more about forms and automatic refreshing after user clicks submit button and how to prevent it.
 
 ```html
-<h1>Some JS code I'm proud of</h1>
+Some JS code I'm proud of
 ```
 
 ```js
@@ -64,7 +64,7 @@ submitBtn.addEventListener("click", function (e) {
 
 ### Continued development
 
-In next projects I want to focus more on coding in Javascript and find out if the code can be defactor further or improved in any other way. I want to read more about preventing events and form submitting.
+In next projects I want to focus more on coding in Javascript and find out if the code can be refactor further or improved in any other way. I want to read more about preventing events and form submitting.
 
 ### Useful resources
 
